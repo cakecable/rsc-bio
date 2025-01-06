@@ -1,61 +1,103 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #000;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 100vh;
-}
+        html, body {
+            height: 100%;
+            overflow: hidden;
+        }
 
-header {
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-}
+        body {
+            font-family: "Times New Romans", serif;
+            background-color: #000000;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
 
-header h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
+        .brail-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://github.com/zoxycontin/rsc-bio/blob/main/assets/brailbg.png?raw=true');
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 1rem;
-    text-transform: lowercase;
-}
+        .main-icon {
+            position: fixed;
+            z-index: -2;
+        }
+        
+        .subtitle {
+            position: absolute;
+            top: calc(55% + 100px);
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1rem;
+            color: white;
+            text-align: center;
+        }
 
-nav a:hover {
-    text-decoration: underline;
-}
+        header {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+        }
 
-main {
-    flex: 1;
-    width: 100%;
-    height: 100%;
-    background-image: url('assets/brailbg.png');
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
-}
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
 
-.pixelated-image img {
-    display: none;
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1rem;
+            text-transform: lowercase;
+        }
 
-footer {
-    padding: 20px;
-    text-align: center;
-    font-size: 0.8rem;
-}
+        nav a:hover {
+            text-decoration: underline;
+        }
 
-/* this css sucks i did it in like 5 minutes no way it ends up good i hate debugging
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            text-align: center;
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+            color: white;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+        footer img {
+            width: auto;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            margin-top: 10px;
+            font-size: 1rem;
+        }
