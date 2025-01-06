@@ -1,14 +1,14 @@
 /* loading thingy magingingin */
 #loading-icon {
   position: fixed;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
 }
 
 #loading-icon img {
-  width: 100px;
+  width: 120px;
   height: auto;
   animation: hoverUpDown 2s ease-in-out infinite;
 }
