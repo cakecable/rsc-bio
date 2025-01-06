@@ -14,3 +14,4 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // daily reminder cake is the best at js (i barely know shit)
+// hiiiii cake :3
