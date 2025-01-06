@@ -8,7 +8,7 @@
 }
 
 #loading-icon img {
-  width: 150px;
+  width: 200px;
   height: auto;
   animation: hoverUpDown 2s ease-in-out infinite;
 }
