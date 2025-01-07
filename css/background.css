@@ -36,23 +36,22 @@
         .main-icon {
             position: fixed;
             z-index: -2;
-            top: 50%;
+            top: 40%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 600px;
-            height: 600px;
+            width: 400px;
+            height: 400px;
         }
         
         .subtitle {
             position: absolute;
-            bottom: 20px;
+            top: calc(45% + 100px);
             left: 50%;
             transform: translateX(-50%);
             font-size: 1rem;
-            opacity: 0.4;
             color: white;
+            opacity: 0.4;
             text-align: center;
-            text-shadow: 0 0 8px rgba(255, 255, 255, 0.5)
         }
 
         header {
@@ -74,8 +73,17 @@
             text-transform: lowercase;
         }
 
+        a {
+           box-shadow: inset 0 0 0 0 #ffffff;
+           color: #54b3d6;
+           margin: 0 -.25rem;
+           padding: 0 .25rem;
+           transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+        }
+
         nav a:hover {
-            text-decoration: underline;
+            box-shadow: inset 100px 0 0 0 #5d6dc9;
+            color: white;
         }
 
         main {
@@ -93,18 +101,20 @@
         }
 
         footer {
-            padding: 20px;
+            width: 100%;
+            max-width: 50rem;
+            padding-top: 1rem;
+            margin: 0 auto 1rem;
             text-align: center;
-            font-size: 0.8rem;
-        }
-
-        footer img {
-            width: auto;
-            height: 50px;
-            margin-bottom: 10px;
-        }
-
-        footer p {
-            margin-top: 10px;
+            font-family: "Times New Roman", serif;
             font-size: 1rem;
+            border-top: 1px solid #313131;
+            margin-top: 5rem;
+            opacity: 0.5;
+            z-index: 1;
+        }
+        
+        footer p {
+            margin: 0.5rem 0; 
+            
         }
